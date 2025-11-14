@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nvdlib"
+version = "0.8.2"
+description = "A simple wrapper for the National Vulnerability CVE/CPE API"
+readme = "README.md"
+requires-python = ">=3.11"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Vehemont", email = "brad@nvdlib.com" }
+]
+maintainers = [
+    { name = "Vehemont", email = "brad@nvdlib.com" }
+]
+keywords = ["python", "packaging", "example"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = [
+    "responses==0.18.0",
+    "pytest==7.0.1",
+]
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+]
+
+[project.urls]
+Homepage = "https://github.com/vehemont/nvdlib"
+BugTracker = "https://github.com/vehemont/nvdlib/issues"
+Documentation = "https://app.readthedocs.org/projects/nvdlib/"
+
+[tool.setuptools]
+packages = ["nvdlib"]
