@@ -30,10 +30,6 @@ dev = [
     "responses==0.18.0",
     "pytest==7.0.1",
 ]
-docs = [
-    "sphinx",
-    "sphinx-rtd-theme",
-]
 
 [project.urls]
 Homepage = "https://github.com/vehemont/nvdlib"
